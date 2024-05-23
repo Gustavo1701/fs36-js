@@ -19,8 +19,12 @@ Sobre declaração de variável:
   6 - não pode conter caracteres especiais
 */
 
-let nome = 'joao'; 
 
+//console.log('Rodando via head');
+
+let nome = 'Angelo Lustosa de Figueiredo Filho'
+let teste = nome.replace(' ', '')
+console.log(teste);
 
 
 
