@@ -21,10 +21,21 @@ Sobre declaração de variável:
 
 
 //console.log('Rodando via head');
+function somar()  {
+    var numero1 = parseFloat(document.getElementById('n1').value);
+    var numero2 = parseFloat(document.getElementById('n2').value);
+    
+    // numero1 = Number;
+    // numero2 = Number;
 
-let nome = 'Angelo Lustosa de Figueiredo Filho'
-let teste = nome.replace(' ', '')
-console.log(teste);
+    var result = numero1 + numero2;
+  
+    console.log(result);
+}
+
+
+
+
 
 
 

@@ -1,0 +1,33 @@
+/* 
+Objetivo: Calcular a media entre 2 numeros
+
+1- Pegar os dois numeros
+2- Somar os dois numeros
+3- Dividir a soma dos numeros pela quantidade de numeros
+
+*/
+
+var n1 = 100;
+var n2 = 200;
+
+// function resultado(){
+//     var soma = n1 + n2;
+//     var media = soma / 2;
+
+//     console.log(media);
+// }
+
+// resultado();
+
+function soma(){    
+    
+    return n1 + n2
+}
+
+soma();
+
+function media(){
+    console.log(soma()/2);
+}
+
+media();
