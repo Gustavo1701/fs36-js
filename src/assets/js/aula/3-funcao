@@ -20,14 +20,15 @@ var n2 = 200;
 // resultado();
 
 function soma(){    
-    
-    return n1 + n2
+    var resultado = n1 + n2;
+    return resultado;
 }
-
-soma();
 
 function media(){
-    console.log(soma()/2);
+    var resultado = soma()/2;
+    return resultado;
 }
+
+console.log(media());
 
 media();
