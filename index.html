@@ -19,15 +19,20 @@
         <h2>Calcular 2 Números</h2>
 
         <form action="">
-            <label for="n1" class="form-label">Numero 1:</label>
-            <input type="text" class="form-control" id="n1" required>
 
-            <label for="n2" class="form-label">Numero 2:</label>
-            <input type="text" class="form-control" id="n2" required>
+            <div>
+                <label for="n1" class="form-label">Numero 1:</label>
+                <input type="text" class="form-control" id="n1" required>
 
-            <button class="btn btn-primary" type="button" onclick="somar()">Somar</button>
-            <button class="btn btn-primary" type="reset">Limpar</button>
-            
+                <label for="n2" class="form-label">Numero 2:</label>
+                <input type="text" class="form-control" id="n2" required>
+
+                <button class="btn btn-primary" type="button" onclick="somar()">Somar</button>
+                <button class="btn btn-primary" type="button" onclick="subtrair()">Diminuir</button>
+                <button class="btn btn-primary" type="button" onclick="multiplicar()">Multiplicar</button>
+                <button class="btn btn-primary" type="button" onclick="dividir()">Dividir</button>
+                <button class="btn btn-primary" type="button" onclick="limpar()">Limpar</button>
+            </div>
             <div class="resultado"></div>
         </form>
     </div>
@@ -43,4 +48,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -21,17 +21,65 @@ Sobre declaração de variável:
 
 
 //console.log('Rodando via head');
-function somar()  {
-    var numero1 = parseFloat(document.getElementById('n1').value);
-    var numero2 = parseFloat(document.getElementById('n2').value);
-    
-    // numero1 = Number;
-    // numero2 = Number;
+var numero1 = document.getElementById('n1');
+var numero2 = document.getElementById('n2');
+var conteudoDiv = document.querySelector('.resultado');
 
-    var result = numero1 + numero2;
-  
-    console.log(result);
+
+function somar() {
+  if (numero1.value != "" && numero2.value != "") {
+    let resultado = parseFloat(numero1.value) + parseFloat(numero2.value);
+    mostrarResultado(resultado);
+  } else {
+    alert('Preencha os campos');
+  }
+
 }
+
+function subtrair() {
+  if (numero1.value != "" && numero2.value != "") {
+    let resultado = parseFloat(numero1.value) - parseFloat(numero2.value);
+    mostrarResultado(resultado);
+  } else {
+    alert('Preencha os campos');
+  }
+}
+
+function multiplicar() {
+  if (numero1.value != "" && numero2.value != "") {
+    let resultado = parseFloat(numero1.value) * parseFloat(numero2.value);
+    mostrarResultado(resultado);
+  } else {
+    alert('Preencha os campos');
+  }
+
+}
+
+function dividir() {
+  if (numero1.value != "" && numero2.value != "") {
+    let resultado = parseFloat(numero1.value) / parseFloat(numero2.value);
+    mostrarResultado(resultado);
+  } else {
+    alert('Preencha os campos');
+  }
+
+}
+
+function mostrarResultado(resultado) {
+  conteudoDiv.innerHTML = 'Resultado: ' + resultado;
+}
+
+function limpar(){
+  numero1.value = "";
+  numero2.value = "";
+  conteudoDiv.innerHTML = "";
+}
+
+
+
+
+
+
 
 
 
